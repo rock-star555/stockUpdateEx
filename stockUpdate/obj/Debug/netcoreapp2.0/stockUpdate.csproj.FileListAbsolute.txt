@@ -1,0 +1,11 @@
+C:\Users\Ринат\source\repos\stockUpdate\stockUpdate\bin\Debug\netcoreapp2.0\stockUpdate.deps.json
+C:\Users\Ринат\source\repos\stockUpdate\stockUpdate\bin\Debug\netcoreapp2.0\stockUpdate.runtimeconfig.json
+C:\Users\Ринат\source\repos\stockUpdate\stockUpdate\bin\Debug\netcoreapp2.0\stockUpdate.runtimeconfig.dev.json
+C:\Users\Ринат\source\repos\stockUpdate\stockUpdate\bin\Debug\netcoreapp2.0\stockUpdate.dll
+C:\Users\Ринат\source\repos\stockUpdate\stockUpdate\bin\Debug\netcoreapp2.0\stockUpdate.pdb
+C:\Users\Ринат\source\repos\stockUpdate\stockUpdate\obj\Debug\netcoreapp2.0\stockUpdate.csproj.CoreCompileInputs.cache
+C:\Users\Ринат\source\repos\stockUpdate\stockUpdate\obj\Debug\netcoreapp2.0\stockUpdate.AssemblyInfoInputs.cache
+C:\Users\Ринат\source\repos\stockUpdate\stockUpdate\obj\Debug\netcoreapp2.0\stockUpdate.AssemblyInfo.cs
+C:\Users\Ринат\source\repos\stockUpdate\stockUpdate\obj\Debug\netcoreapp2.0\stockUpdate.dll
+C:\Users\Ринат\source\repos\stockUpdate\stockUpdate\obj\Debug\netcoreapp2.0\stockUpdate.pdb
+C:\Users\Ринат\source\repos\stockUpdate\stockUpdate\obj\Debug\netcoreapp2.0\stockUpdate.csprojResolveAssemblyReference.cache

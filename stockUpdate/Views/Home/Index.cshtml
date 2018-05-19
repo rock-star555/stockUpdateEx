@@ -1,0 +1,73 @@
+﻿@using stockUpdate.Models;
+@model RootObject
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section scripts
+    {
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                 $.ajax({
+                        url: '@Url.Action("GetItems", "Home")',
+                        data: "Test data",
+                        type: 'GET', //POST if you want to save, GET if you want to fetch data from server
+                        success: function (obj) {
+                            $('#StockTable').html(obj);
+                        },
+                        error: function (obj) {
+                            alert('Something happened');
+                        }
+                    });
+            },15000);
+            $('#updatebtn').click(function () {
+
+                    $.ajax({
+                        url: '@Url.Action("GetItems", "Home")',
+                        data: "Test data",
+                        type: 'GET',
+                        success: function (obj) {
+                            $('#StockTable').html(obj);
+                        },
+                        error: function (obj) {
+                            alert('Something happened');
+                        }
+                    });
+            });
+        });
+    </script>
+}
+
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" asp-append-version="true"></script>
+
+@if (Model != null)
+{
+    @*<form asp-controller="Home" asp-action="GetItems" data-ajax="true" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-update="#StockTable">*@
+    <div id="nav">
+        <ul class="nav navbar-nav" style="width:100%">
+            <li style="float:right">
+                <input id="updatebtn" type="submit" value="Обновить в ручном режиме" />
+            </li>
+        </ul>
+    </div>
+    @*</form>*@
+    <div id="main">
+        <center><h1>Таблица валют</h1></center>
+        <table id="StockTable" cellpadding="0" cellspacing="0" border="1">
+            <tr>
+                <th>Название</th>
+                <th>Цена</th>
+                <th>Количество</th>
+            </tr>
+            @foreach (var m in Model.stock)
+            {
+                <tr>
+                    <td>@m.name</td>
+                    <td>@m.volume</td>
+                    <td>@m.price.amount</td>
+                </tr>
+            }
+        </table>
+    </div>
+}
